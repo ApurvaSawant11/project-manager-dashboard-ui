@@ -1,12 +1,13 @@
 :root {
     --primary:#2f354d;
     --secondary: #038077;
-    --light-sec: #c8e6e2;
-    --red: #e60003;
-    --light-red: #ff758c;
+    --light-secondary: #c8e6e2;
+    --red: #ea1427;
+    --light-red: #fd8499;
     --yellow: #e49100;
     --light-yellow: #fee7ae;
     --light-teal:#00ddc9;
+    --dark-teal:#13b7a9;
     --light-purple: #7d8ace;
     --text-color: #373737;
     --white:#ffffff;
@@ -74,4 +75,64 @@
 .pie-chart-widget {
     grid-row: span 2;
     grid-column: span 2;
+}
+
+/* buttons */
+
+.btn {
+    padding: 0.5rem;
+    border-radius: 4px;
+    outline: none;
+    margin: 0 0.5rem;
+}
+
+.secondary-btn, .teal-outline-btn:hover {
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    color: var(--white);
+}
+
+.teal-outline-btn {
+    background-color: transparent;
+    border: 2px solid var(--dark-teal);
+    color: var(--dark-teal);
+}
+
+/* filter bar */
+
+.budget-status {
+    font-size: 1.7rem;
+}
+
+/* project budget */
+.budget-container {
+    gap: 2rem
+}
+
+.budget-widget {
+    flex: 1 0 0;
+    padding: 0.75rem;
+}
+
+.progress-bar {
+    height: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar>.completed {
+    position: absolute;
+    height: 1rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.status-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0.7rem;
 }

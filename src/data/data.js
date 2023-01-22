@@ -11,6 +11,7 @@ import andrea from "../assets/andrea.jpg";
 import jose from "../assets/jose.jpg";
 import juan from "../assets/juan.jpg";
 import maria from "../assets/maria.jpg";
+import projectImage from "../assets/projectImage.jpg";
 
 export const numberStatusData = [
   {
@@ -41,7 +42,7 @@ export const numberStatusData = [
     id: 105,
     icon: <UsersIcon size={28} />,
     num: 5,
-    title: "Employess",
+    title: "Employees",
   },
 ];
 
@@ -80,5 +81,64 @@ export const employees = [
     designation: "UX Junior",
     profileImg: maria,
     mood: 3,
+  },
+];
+
+export const projectBudgets = [
+  {
+    id: "b01",
+    projectName: "Insurance App",
+    companyName: "Verti",
+    projectImg: projectImage,
+    totalBudget: "70,000 €",
+    profitability: "-2,500 €",
+    overBudgetHours: "100",
+    actualHours: "1,100",
+    soldHours: "1200",
+    progressBar: 100,
+    progressColor: "red",
+    projectStatus: "danger",
+  },
+  {
+    id: "b02",
+    projectName: "Neo",
+    companyName: "Bankia",
+    projectImg: projectImage,
+    totalBudget: "70,000 €",
+    profitability: "4,000 €",
+    overBudgetHours: "",
+    actualHours: "1,100",
+    soldHours: "1000",
+    progressBar: 50,
+    progressColor: "yellow",
+    projectStatus: "ongoing",
+  },
+  {
+    id: "b03",
+    projectName: "VR Website",
+    companyName: "Barca",
+    projectImg: projectImage,
+    totalBudget: "70,000 €",
+    profitability: "4,000 €",
+    overBudgetHours: "",
+    actualHours: "1,100",
+    soldHours: "1000",
+    progressBar: 50,
+    progressColor: "green",
+    projectStatus: "ongoing",
+  },
+  {
+    id: "b04",
+    projectName: "VR Website",
+    companyName: "Barca",
+    projectImg: projectImage,
+    totalBudget: "70,000 €",
+    profitability: "4,000 €",
+    overBudgetHours: "",
+    actualHours: "1,100",
+    soldHours: "1000",
+    progressBar: 100,
+    progressColor: "green",
+    projectStatus: "completed",
   },
 ];

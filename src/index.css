@@ -6,14 +6,15 @@
 @import url("https://dazzle-ui-components.netlify.app/components/utils/text-utils.css");
 
 /* importing google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color)
 }
 
 /* -----------------utils---------------- */
@@ -26,6 +27,10 @@ body {
 
 .text-teal {
   color: var(--light-teal);
+}
+
+.text-secondary {
+  color: var(--secondary);
 }
 
 .text-red {
@@ -49,6 +54,14 @@ body {
   margin: 0;
 }
 
+.text-xxs {
+  font-size: 0.5rem;
+}
+
+.text-sm {
+  font-size: 0.95rem;
+}
+
 /* background utils */
 
 .bg-teal {
@@ -59,10 +72,39 @@ body {
   background-color: var(--secondary);
 }
 
+.bg-light-secondary {
+  background-color: var(--light-secondary);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
 .bg-light-red {
   background-color: var(--light-red);
 }
 
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-light-yellow {
+  background-color: var(--light-yellow);
+}
+
 .bg-white {
   background-color: var(--white);
+}
+
+/* width utils */
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
 }

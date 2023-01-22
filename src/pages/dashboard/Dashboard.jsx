@@ -6,7 +6,7 @@ import {
   ProjectBudget,
   TeamMood,
 } from "../../components";
-import { employees, numberStatusData } from "../../data/data";
+import { employees, numberStatusData, projectBudgets } from "../../data/data";
 
 const Dashboard = () => {
   return (
@@ -24,7 +24,11 @@ const Dashboard = () => {
       </div>
 
       <BudgetFilterBar />
-      <ProjectBudget />
+      <div className="budget-container flex-row mt-1p5">
+        {projectBudgets.map((project) => (
+          <ProjectBudget key={project.id} project={project} />
+        ))}
+      </div>
     </>
   );
 };
