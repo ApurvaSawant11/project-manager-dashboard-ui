@@ -1,13 +1,46 @@
+/* importing utils from my Component Library - https://dazzle-ui.netlify.app */
+
+@import url("https://dazzle-ui-components.netlify.app/components/utils/margin-utils.css");
+@import url("https://dazzle-ui-components.netlify.app/components/utils/padding-utils.css");
+@import url("https://dazzle-ui-components.netlify.app/components/utils/flex-utils.css");
+@import url("https://dazzle-ui-components.netlify.app/components/utils/text-utils.css");
+
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* -----------------utils---------------- */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* text utils */
+
+.text-teal {
+  color: var(--light-teal);
+}
+
+.text-red {
+  color: var(--red)
+}
+
+.text-gray {
+  color: var(--light-gray);
+}
+
+/* background utils */
+
+.bg-teal {
+  background-color: var(--light-teal);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
 }

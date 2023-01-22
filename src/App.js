@@ -1,10 +1,10 @@
-
-import './App.css';
+import "./App.css";
+import { Navbar } from "./components";
 
 function App() {
   return (
     <div className="App">
-      <h1>Project Manager's Dashboard</h1>
+      <Navbar />
     </div>
   );
 }
