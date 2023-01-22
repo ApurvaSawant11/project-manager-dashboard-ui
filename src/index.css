@@ -6,7 +6,8 @@
 @import url("https://dazzle-ui-components.netlify.app/components/utils/text-utils.css");
 
 /* importing google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
   margin: 0;
@@ -32,7 +33,20 @@ body {
 }
 
 .text-gray {
-  color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.number-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-super-lg {
+  font-size: 3rem;
+  margin: 0;
 }
 
 /* background utils */
@@ -43,4 +57,12 @@ body {
 
 .bg-secondary {
   background-color: var(--secondary);
+}
+
+.bg-light-red {
+  background-color: var(--light-red);
+}
+
+.bg-white {
+  background-color: var(--white);
 }

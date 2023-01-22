@@ -3,15 +3,75 @@
     --secondary: #038077;
     --light-sec: #c8e6e2;
     --red: #e60003;
-    --light-pink: #ff758c;
+    --light-red: #ff758c;
     --yellow: #e49100;
     --light-yellow: #fee7ae;
     --light-teal:#00ddc9;
     --light-purple: #7d8ace;
     --text-color: #373737;
-    --white:#f8f8fd;
+    --white:#ffffff;
     --light-gray: #ebebeb;
+    --dark-gray: #9d9d9d;
     --shadow: #64646f33 0px 7px 29px 0px;
     --box-shadow: 0 0 #0000, 0 0 #0000,#64646f33 0px 7px 29px 0px;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  common css */
+
+.main-container {
+    padding: 2rem 4rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    grid-template-rows: auto repeat(2,minmax(0,1fr));
+    gap: 2rem;
+    flex-grow: 2;
+}
+
+.card {
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+}
+
+.mood-widget { 
+    flex-grow: 0;
+}
+
+.team-member-details {
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mood-emoji {
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.line-chart-widget {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.pie-chart-widget {
+    grid-row: span 2;
+    grid-column: span 2;
+}
