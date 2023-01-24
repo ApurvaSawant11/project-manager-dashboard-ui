@@ -3,7 +3,7 @@
     --secondary: #038077;
     --light-secondary: #c8e6e2;
     --red: #ea1427;
-    --light-red: #fd8499;
+    --light-red: #ff718a;
     --yellow: #e49100;
     --light-yellow: #fee7ae;
     --light-teal:#00ddc9;
@@ -13,6 +13,7 @@
     --white:#ffffff;
     --light-gray: #ebebeb;
     --dark-gray: #9d9d9d;
+    --opacity-50:#f3f3f380;
     --shadow: #64646f33 0px 7px 29px 0px;
     --box-shadow: 0 0 #0000, 0 0 #0000,#64646f33 0px 7px 29px 0px;
 }
@@ -44,27 +45,17 @@
 
 .card {
     box-shadow: var(--box-shadow);
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
-.mood-widget { 
-    flex-grow: 0;
+/*  */
+.number-widget {
+    position: relative;
 }
 
-.team-member-details {
-    border-bottom: 2px solid var(--light-gray);
-}
 
-.team-member {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.mood-emoji {
-    border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+.number-status-icon {
+    position: absolute;
 }
 
 .line-chart-widget {

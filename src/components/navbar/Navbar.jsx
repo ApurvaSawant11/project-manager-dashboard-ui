@@ -12,8 +12,8 @@ const Navbar = () => {
     "Reports",
   ];
   return (
-    <header className="py-0p5">
-      <h1 className="m-0 logo">
+    <header>
+      <h1 className="m-0 logo fw-500">
         <span className="text-teal">H</span>OURS
       </h1>
       <section>

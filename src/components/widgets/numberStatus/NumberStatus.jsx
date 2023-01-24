@@ -6,12 +6,16 @@ const NumberStatus = ({ item }) => {
         title === "Delayed" ? "bg-light-red text-white" : ""
       }`}
     >
-      <div className={`${title === "Delayed" ? "text-red" : "text-teal"}`}>
+      <span
+        className={`number-status-icon ${
+          title === "Delayed" ? "text-red" : "text-teal"
+        }`}
+      >
         {icon}
-      </div>
+      </span>
       <div className="flex-column-center">
-        <span className="fw-800 text-super-lg number-font">{num}</span>
-        <p className="my-0p5">{title}</p>
+        <span className="fw-800 text-super-lg number-font mt-1p5">{num}</span>
+        <p className="mt-0p5">{title}</p>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const ProjectBudget = ({ project }) => {
       </div>
 
       <div className="relative">
-        <div className="flex-column text-xxs w-100 py-1">
+        <div className="flex-column gap-0p5 text-xxs w-100 py-1">
           <p className="flex-row">
             <span className="text-gray fw-200 w-40">Total Budget</span>
             {totalBudget}

@@ -16,31 +16,31 @@ import projectImage from "../assets/projectImage.jpg";
 export const numberStatusData = [
   {
     id: 101,
-    icon: <DashboardIcon size={28} />,
+    icon: <DashboardIcon size={36} fontWeight={700} />,
     num: 5,
     title: "Total Projects",
   },
   {
     id: 102,
-    icon: <CheckCircleIcon size={28} />,
+    icon: <CheckCircleIcon size={36} fontWeight={700} />,
     num: 1,
     title: "Completed",
   },
   {
     id: 103,
-    icon: <LoopIcon size={28} />,
+    icon: <LoopIcon size={36} fontWeight={700} />,
     num: 3,
     title: "Ongoing",
   },
   {
     id: 104,
-    icon: <WarningIcon size={28} />,
+    icon: <WarningIcon size={36} fontWeight={700} />,
     num: 1,
     title: "Delayed",
   },
   {
     id: 105,
-    icon: <UsersIcon size={28} />,
+    icon: <UsersIcon size={36} fontWeight={700} />,
     num: 5,
     title: "Employees",
   },

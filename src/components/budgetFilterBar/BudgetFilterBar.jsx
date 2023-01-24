@@ -1,7 +1,7 @@
 import { CalendarIcon, DownloadIcon, FilterIcon, PlusIcon } from "../../assets";
 const BudgetFilterBar = () => {
   return (
-    <div className="flex-row items-end mt-2">
+    <div className="flex-row items-start mt-2">
       <p className="pr-1 fw-600 budget-status">Budget status</p>
 
       <button className="flex-row content-between items-center gap-0p5  btn secondary-btn">
